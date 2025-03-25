@@ -257,7 +257,7 @@ const FeatureSection: React.FC<{ reversed?: boolean }> = ({ reversed }) => {
                 />
               </motion.div>
             </div>
-          /</Col>
+          </Col>
           
           <Col lg={6} md={12} ref={textRef}>
             <motion.div 

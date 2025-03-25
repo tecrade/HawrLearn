@@ -44,7 +44,7 @@
   
   .cta-heading {
     font-size: 1.875rem;
-    font-weight: 700;
+    font-weight:900;
     color: rgb(26 35 126);
   }
   
@@ -55,10 +55,11 @@
   }
   
   .cta-button {
-    background-color: rgb(37 99 235);
+    background-color: #0C4ECE;
     color: white;
     padding: 0.75rem 2rem;
     border-radius: 9999px;
+    border-style: none;
     font-size: 1.125rem;
     font-weight: 600;
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
@@ -198,9 +199,7 @@
     color: rgb(244 114 182);
   }
   
-  .footer-list.four{
-    margin-left: 2rem;
-  }
+  
   .bottom-content {
     display: flex;
     flex-direction:column;
@@ -219,12 +218,22 @@
       flex-direction:column;
       gap: 0;
     }
+    .footer-list.four{
+      margin-left: 2rem;
+    }
+    .bottom-content {
+      display: flex;
+      flex-direction:column;
+      justify-content: space-between;
+      gap: 1rem;
+      font-size: 0.875rem;
+      color: rgb(253, 253, 253);
+    }
   }
   
   .bottom-links {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 1rem;
   }
   
