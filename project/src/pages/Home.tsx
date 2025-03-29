@@ -3,7 +3,6 @@ import CoursesSection from "../components/CoursesSection";
 import FeaturesSection from "../components/FeaturesSection";
 
 
-
 function Home() {
   return (
     <div>

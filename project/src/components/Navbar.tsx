@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Navbar, Container, Nav, NavDropdown, Form, Button } from 'react-bootstrap';
-import { Search } from 'lucide-react';
+import { Search,} from 'lucide-react';
+import { useNavigate } from "react-router-dom";
 
 const NavigationBar: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,11 +29,11 @@ const NavigationBar: React.FC = () => {
       className={scrolled ? 'navbar scrolled' : 'navbar'}
     >
       <Container>
-        <Navbar.Brand href="#home" className="text-white fw-bold">Company</Navbar.Brand>
+        <Navbar.Brand href="#home" className="text-white fw-bold"><img src='public\images\navlogo.png'></img></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mx-auto">
-            <Nav.Link href="#home" className="text-white">Company</Nav.Link>
+            <Nav.Link href="#home" className="text-white"  onClick={() => navigate("/")}>Home</Nav.Link>
             <NavDropdown 
               title={<span className="text-white">Courses</span>} 
               id="basic-nav-dropdown"
@@ -43,7 +45,7 @@ const NavigationBar: React.FC = () => {
               <NavDropdown.Divider />
               <NavDropdown.Item href="#all-courses">All Courses</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#events" className="text-white">Events</Nav.Link>
+            <Nav.Link href="#events" className="text-white" onClick={() => navigate("/events")}>Events</Nav.Link>
             <Nav.Link href="#careers" className="text-white">Careers</Nav.Link>
             <Nav.Link href="#blog" className="text-white">Blog</Nav.Link>
             <Nav.Link href="#contact" className="text-white">Contact</Nav.Link>

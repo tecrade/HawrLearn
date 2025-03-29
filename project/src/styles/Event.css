@@ -1,0 +1,73 @@
+.eventpage{
+    background-color: #e4f1f5;
+}
+.Eventbanner{
+    background-color: #1a237e;
+    background-image: url('../public/images/bannerbg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    min-height: 80vh;
+    position: relative;
+    overflow: hidden;
+}
+.Eventbannercontent{
+    margin-top: 6rem;
+    z-index:2;
+}
+.Eventbannercontent h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1.5rem;
+  }
+  
+  .Eventbannercontent p {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 2rem;
+    max-width: 600px;
+  }
+  .eventbannerimg-container{
+    margin: auto;
+  }
+  .Eventfloatdiv{
+    z-index:3;
+    position: relative;
+    width:450vh;
+    height: auto;
+    right:40rem;
+    top:-22rem;
+  }
+  .floatinnerdiv {
+    min-height: 20vh;
+    width: 680px;
+    background-color: white;
+    position: absolute;
+    top: 30rem;
+    text-align: left;
+    left: 53rem;
+    padding: 30px;
+    padding-left: 30px;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+  .floatinnerdiv h1{
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .floatinnerdiv p{
+    font-size: large;
+    color: #505050E5;
+  }
+  .floatinnerdiv p:nth-of-type(2){
+    font-size: small;
+    font-weight: bold;
+    color:black;
+  }
+  .floatinnerdiv p:nth-of-type(2):hover{
+    color: blue;
+  }
